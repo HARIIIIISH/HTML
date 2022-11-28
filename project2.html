@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		img{width: 320px;
+			height: 200px;
+			position: absolute;}
+
+	    .container{width: 350px;
+	    	height: 200px;
+	    	position: relative;
+	    	margin-top: 15%;
+	    	margin-left: 40%;
+	    	perspective: 1000px;
+	    	transform-style: preserve-3d;
+	    	transform: rotateX(-10deg) rotateZ(-10deg);
+	    	animation: ror 20s linear infinite;}
+
+        @keyframes ror{
+        	50%{transform: rotateX(30deg);}
+        	80%{transform: rotateX(-30deg);}
+        }
+
+	    .images{width: 100%;
+	    	position: absolute;
+	    	transform-style: preserve-3d;
+	    	animation: rotate 10s linear infinite;
+	    }
+	    @keyframes rotate{
+	    	from{}
+	    	to{transform: rotateY(360deg);}
+
+	    }
+
+	    img:nth-child(1){transform: rotateY(60deg) translateZ(300px);}
+	    img:nth-child(2){transform: rotateY(120deg) translateZ(300px);}
+	    img:nth-child(3){transform: rotateY(180deg) translateZ(300px);}
+	    img:nth-child(4){transform: rotateY(240deg) translateZ(300px);}
+	    img:nth-child(5){transform: rotateY(300deg) translateZ(300px);}
+	    img:nth-child(6){transform: rotateY(360deg) translateZ(300px);}
+
+	    img:hover{width: 340px;
+	    	height: 230px;
+	    	cursor: pointer;}
+
+	    body{background: linear-gradient(90deg,blue,skyblue,blue);}
+
+	</style>
+
+</head>
+<body>
+<div class="container">
+	<div class="images">
+		<img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+
+		<img src="https://images.pexels.com/photos/58997/pexels-photo-58997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+
+		<img src="https://images.pexels.com/photos/2023384/pexels-photo-2023384.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+
+		<img src="https://images.pexels.com/photos/33053/dog-young-dog-small-dog-maltese.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+
+		<img src="https://images.pexels.com/photos/2253275/pexels-photo-2253275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+
+		<img src="https://images.pexels.com/photos/257540/pexels-photo-257540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+	</div>
+</div>
+</body>
+</html>
